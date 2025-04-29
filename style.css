@@ -38,73 +38,40 @@ body {
 
 /* HEADER NAV */
 
-/* HERO ARTICLE */
+/* ARTIKEL TEXT */
 
-.hero-article {
-  display: flex;
-  justify-content: center;
+.article-text {
   padding: 20px;
-  align-items: center;
-  margin-top: 30px;
-  gap: 200px;
 }
 
-.logo-hero {
-  width: 250px;
-}
+/* ARTIKEL TEXT */
 
-.text-article {
-  text-align: justify;
-  font-size: 25px;
-  font-weight: bold;
-}
+/* ADD STORY BUTTON */
 
-.text-article-container {
-  width: 400px;
+.skip-button {
+  font-family: Inter;
+  padding: 10px;
+  border: none;
+  background-color: #2c3d4f;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 769px) {
-  .hero-article {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0px;
-    width: auto;
-    margin-top: 15px;
-  }
-
-  .text-article {
-    font-size: 20px;
+  .article-text {
     text-align: center;
   }
-
-  .logo-hero {
-    width: 150px;
-  }
-
-  .text-article-container {
-    width: 250px;
-  }
-}
-/* HERO ARTICLE */
-
-/* SKIP TO CONTENT */
-
-.skip-content {
-  text-align: center;
-  padding: 20px;
 }
 
-.skip-button {
-  padding: 15px;
-  color: white;
-  font-weight: bold;
-  border-radius: 20px;
-  border: none;
-  background-color: #2c3d4f;
+/* ADD STORY BUTTON */
+
+.list-story {
   font-family: Inter;
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
 }
-
-/* SKIP TO CONTENT */
 
 /* FORM SECTION */
 
@@ -155,21 +122,20 @@ textarea {
   resize: vertical;
 }
 
-
 /* LOGIN FORM */
 
-.container-form{
+.container-form {
   padding: 20px;
 }
 
-.login-form{
+.login-form {
   display: flex;
   text-align: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.login-input-form{
+.login-input-form {
   margin-top: 20px;
 }
 
@@ -186,3 +152,31 @@ textarea {
 }
 
 /* LOGIN FORM */
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* spacing between cards */
+  justify-content: flex-start;
+  width: 100%;
+
+}
+
+.card {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.story-pict {
+  width: 100%;
+}
+
+
+.form-label{
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
